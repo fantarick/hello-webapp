@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Prova Web App</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    button { padding: 0.5em 1em; font-size: 1em; }
+  </style>
+  <script>
+    function increment() {
+      var counter = document.getElementById('counter');
+      var value = parseInt(counter.textContent);
+      counter.textContent = value + 1;
+    }
+  </script>
+</head>
+<body>
+  <h1>Benvenuto!</h1>
+  <p>Hai cliccato il pulsante <span id="counter">0</span> volte.</p>
+  <button onclick="increment()">Cliccami</button>
+</body>
+</html>
